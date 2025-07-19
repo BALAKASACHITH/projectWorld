@@ -5,3 +5,14 @@ html,body,#root{
     background-color: red;
     color: white;
 }
+.App{
+    height: 100%;
+}
+.Land{
+    height: 100%;
+    background-color: blue;
+}
+.DashBoard{
+    height: 100%;
+    background-color: yellow;
+}
