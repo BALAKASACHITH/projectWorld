@@ -54,3 +54,18 @@ Nowadays, many students are passionate about creating projects but lack a **plat
 ```bash
 git clone https://github.com/<your-username>/ProjectWorld.git
 cd ProjectWorld
+```
+
+### 2. Backend Setup:
+```bash
+cd server
+npm install
+node server.js
+```
+---
+### 3. frontend Setup:
+```bash
+cd client
+npm install
+npm run dev
+```
