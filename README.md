@@ -62,7 +62,6 @@ cd server
 npm install
 node server.js
 ```
----
 ### 3. frontend Setup:
 ```bash
 cd client
