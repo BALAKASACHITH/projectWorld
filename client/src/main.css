@@ -94,4 +94,51 @@ html,body,#root{
 .DashBoard{
     height: 100%;
     background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.DashBoardTop{
+    height: 10%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DashBoardTopLeft{
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+.DashBoardTopRight{
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 10px;
+}
+.DashBoardBot{
+    height: 90%;
+    width: 100%;
+    background-color: green;
+    overflow-y: auto;
+}
+.title{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+.Community{
+    height: 100%;
+    background-color: black;
+}
+.Your{
+    height: 100%;
+    background-color: brown;
 }

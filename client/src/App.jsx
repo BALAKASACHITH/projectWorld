@@ -6,8 +6,8 @@ export default function App(){
     <div className="App" >
       <Routes>
         <Route path="/" element={<Land/>}></Route>
-        <Route path="/DashBoard" element={<DashBoard/>} ></Route>
+        <Route path="/DashBoard*" element={<DashBoard/>} ></Route>
       </Routes>
     </div>
   )
-}
+} 
