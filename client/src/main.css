@@ -36,6 +36,29 @@ html,body,#root{
     border: 2px solid white;
     cursor: pointer;
 }
+.Mes.good{
+    width: 625px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: black;
+    color: green;
+    border-bottom: 2px solid green;
+}
+.Mes.bad{
+    width: 625px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: black;
+    color: red;
+    border-bottom: 2px solid red;
+}
+
 .Land{
     height: 100%;
     background-color: blue;
