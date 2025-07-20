@@ -5,6 +5,7 @@ import Show from './Show';
 import Collaborate from './Collaborate';
 import AddProject from './AddProject';
 import Collaborators from './Collaborators';
+import View from './View';
 export default function DashBoard(){
     const user=JSON.parse(localStorage.getItem("user"));
     if(!user) return <Navigate to="/"/>
@@ -28,6 +29,7 @@ export default function DashBoard(){
                     <Route path='Yours' element={<Your/>} ></Route>
                     <Route path='Yours/AddProject' element={<AddProject/>}></Route>
                     <Route path='Yours/Collaborators' element={<Collaborators/>} ></Route>
+                    <Route path='Yours/Collaborators/View' element={<View/>}></Route>
                     <Route path="Show" element={<Show/>}></Route>
                     <Route path='Collaborate' element={<Collaborate/>}></Route>
                 </Routes>

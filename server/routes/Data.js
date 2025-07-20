@@ -10,6 +10,14 @@ router.get("/all",async (req,res)=>{
         res.json({success:false,error:e})
     }
 });
+router.get("/coll",async (req,res)=>{
+    try{
+        const data=await Collaborator.find();
+        res.json(data);
+    }catch(e){
+        res.json({success:false,error:e})
+    }
+});
 router.post("/Collaborate",async (req,res)=>{
     const{fromroll,toroll,toprojectname,name,contact,rate}=req.body;
     try{
