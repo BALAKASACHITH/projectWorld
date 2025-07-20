@@ -14,10 +14,7 @@ export default function OtherUser({roll,projectname,state,description,techstack}
     const Collaborate=()=>{
         localStorage.setItem("Collaborate",JSON.stringify({
             roll:roll,
-            projectname:projectname,
-            state:state,
-            description:description,
-            techstack:techstack
+            projectname:projectname
         }))
         navigate("/DashBoard/Collaborate");
     }

@@ -5,9 +5,13 @@ export default function Community(){
     const[data,setData]=useState([]);
     useEffect(()=>{
         const getit=async ()=>{
+            const uroll=JSON.parse(localStorage.getItem("user")).roll;
             try{
                 const res=await axios.get("http://localhost:3000/Data/all");
-                setData(res.data);
+                const d=res.data.filter((el)=>{
+                    return el.roll!=uroll;
+                })
+                setData(d);
             }catch(e){
                 console.error("Catched error in getting ",e)
             }
